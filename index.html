@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natchanan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- เพิ่ม Font Awesome CDN สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header และเมนูนำทาง -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#portfolio" class="portfolio active">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#assignment">Assignment</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <!-- สลับโหมด -->
+            <div class="mode-toggle" id="mode-toggle">
+                <i class="fas fa-sun" id="light-icon"></i>
+                <i class="fas fa-moon" id="dark-icon" style="display: none;"></i>
+            </div>            
+        </nav>
+    </header>    
+
+    <!-- ส่วน Portfolio -->
+    <section id="portfolio" class="main-content">
+        <div class="intro-text">
+            <h2>Hi There,</h2>
+            <h1>I am <span class="highlight">Natchanan</span></h1>
+            <p>I am a student of the Faculty of Media Arts and Technology, Department of Media Technology,</p>
+            <p>King Mongkut's University of Technology Thonburi.</p>
+        </div>
+        <div class="image-container">
+            <img src="pic/Name1.jpeg" alt="natchanan" style="display: block;">
+            <!-- เพิ่มรูปภาพที่ต้องการในสไลด์โชว์ -->
+        </div>
+    </section>
+
+    <!-- ส่วน About Me -->
+    <section id="about" class="about-content">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <!-- รูปภาพที่เลื่อนเปลี่ยนได้ -->
+            <div class="about-image">
+                <div class="image-slider">
+                    <img src="pic/Name2.jpg" alt="Profile 1" class="slider-image active">
+                    <img src="pic/Name3.JPG" alt="Profile 2" class="slider-image">
+                    <img src="pic/Name4.JPG" alt="Profile 3" class="slider-image">
+                </div>
+                <!-- ปุ่มเลื่อน -->
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>            
+            <!-- ข้อมูลส่วนตัว -->
+            <div class="about-info">
+                <h3>First name - Last name:</h3>
+                <p>Natchanan Sukwandee</p>
+                
+                <h3>Nickname:</h3>
+                <p>Name</p>
+                
+                <h3>Birthdate:</h3>
+                <p>21 July 2003</p>
+                
+                <h3>Age:</h3>
+                <p>21 Year Old</p>
+
+                <h3>Hobby:</h3>
+                <p>Listen to music, draw pictures, watch series, play games, write novels, play volleyball</p>
+
+                <h3>Skills:</h3>
+                <p>Adobe Animate , Bandlab , Adobe Photoshop , Code Programming , Canva</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ส่วน Project -->
+    <section id="project" class="project-content">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <!-- Project Box 1 -->
+            <div class="project-box">
+                <a href="project1/project1.html">
+                    <div class="project-image" id="project1">
+                        <img src="pic/Project1-1.jpg" alt="Project 1">
+                        <h3>Project 1</h3>
+                    </div>
+                    <div class="project-info">
+                        <p>MAT 213 : Animation Final Project</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project Box 2 -->
+            <div class="project-box">
+                <a href="project2/project2.html">
+                    <div class="project-image" id="project2">
+                        <img src="pic/Project2.jpg" alt="Project 2">
+                        <h3>Project 2</h3>
+                    </div>
+                    <div class="project-info">
+                        <p>MAT 109 : Memory Sadness Move on</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project Box 3 -->
+            <div class="project-box">
+                <a href="project3/project3.html">
+                    <div class="project-image" id="project3">
+                        <img src="pic/Project3.jpg" alt="Project 3">
+                        <h3>Project 3</h3>
+                    </div>
+                    <div class="project-info">
+                        <p>DMT 320 : Embedded System</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ส่วน Assignment -->
+    <section id="assignment" class="assignment-content">
+        <h2>Assignments</h2>
+        <div class="assignment-grid">
+            <!-- Assignment Box 1 -->
+            <div class="assignment-box">
+                <a href="week3/assignment3/index.html">
+                    <div class="assignment-image">
+                        <h3>Cinnamon Roll</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Assignment Box 2 -->
+            <div class="assignment-box">
+                <a href="week4/assignment4/index.html">
+                    <div class="assignment-image">
+                        <h3>Pizza dip</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Assignment Box 3 -->
+            <div class="assignment-box">
+                <a href="week5/assignment5/assignment5.html">
+                    <div class="assignment-image">
+                        <h3>Blog</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Assignment Box 4 -->
+            <div class="assignment-box">
+                <a href="week6/assignment6/register.html">
+                    <div class="assignment-image">
+                        <h3>Register and login</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Assignment Box 5 -->
+            <div class="assignment-box">
+                <a href="week7/assignment7/index.html">
+                    <div class="assignment-image">
+                        <h3>Square game</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ส่วน Contact Me -->
+    <section id="contact" class="contact-content">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Location: Bangkok, Thailand</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/natchanan.sukwondee.1/" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/nnamenatchx/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:nonamech2003@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.tiktok.com/@nnamenatchx?lang=th-TH" target="_blank" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Natchanan Sukwandee</p>
+        <div id="footer">
+            <a href="https://www.canva.com/design/DAGSt4yIqjg/FVfRwIcTRg3uP9KvExsYxg/edit?utm_content=DAGSt4yIqjg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="footer-link">Canva</a>
+            <a href="https://www.behance.net/gallery/138023915/2021-Portfolio" class="footer-link">Behance</a>
+            <a href="https://dribbble.com/shots/15533908-Freelancer-Personal-Website-Design-UI" class="footer-link">Dribbble</a>
+            <a href="https://cupidcopy.co.uk/" class="footer-link">Cupidcopy</a>
+            <a href="https://www.youtube.com/watch?v=l9CZykYZkOQ" class="footer-link">KATSEYE-Touch</a>
+            <a href="https://chatgpt.com/" class="footer-link">ChatGPT</a>
+        </div>
+    </footer>   
+</body>
+</html>
